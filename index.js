@@ -39,7 +39,7 @@ client.connect(err => {
   })
 
   app.get('/', (req, res) => {
-    res.send('Its working')
+    res.send("It's working")
   })
 
   app.get('/products', (req,res) => {
