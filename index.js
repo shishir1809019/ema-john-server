@@ -38,6 +38,10 @@ client.connect(err => {
       })
   })
 
+  app.get('/', (req, res) => {
+    res.send('Its working')
+  })
+
   app.get('/products', (req,res) => {
     productsCollection.find({}).limit(20)
     .toArray((err,documents) => {
